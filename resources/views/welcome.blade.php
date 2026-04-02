@@ -41,7 +41,7 @@
     <main class="pt-32 pb-20 px-6">
         <section class="max-w-4xl mx-auto text-center space-y-8">
             <div class="space-y-4">
-                <p class="text-[10px] uppercase tracking-[0.5em] text-[#A69076] font-bold">Bondowoso • East Java</p>
+                <p class="text-[10px] uppercase tracking-[0.5em] text-[#A69076] font-bold">Jurang-Sapi-Bondowoso • East Java</p>
                 <h1 class="font-syne text-5xl md:text-8xl font-bold tracking-tight leading-[0.9]">
                     Simplify Beauty,<br>Create Moments.
                 </h1>
