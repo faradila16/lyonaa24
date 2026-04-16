@@ -45,20 +45,20 @@ node {
         checkout scm
     }
 
-  stage('Build') {
-    withEnv(['DOCKER_HOST=unix:///var/run/docker.sock']) {
-        sh '''
-        docker run --rm \
-          -v $(pwd):/app \
-          -w /app \
-          composer:2.6 \
-          composer install --ignore-platform-req=ext-gd --no-dev --optimize-autoloader
-        '''
+    stage('Build') {
+        withEnv(['DOCKER_HOST=unix:///var/run/docker.sock']) {
+            sh '''
+            docker run --rm \
+              --user root \
+              -v $(pwd):/app \
+              -w /app \
+              composer:2.6 \
+              composer install --ignore-platform-req=ext-gd --no-dev --optimize-autoloader
+            '''
+        }
     }
-}
 
-    stage('Testing') {
-        sh '''
+}
         docker run --rm ubuntu:22.04 echo "Ini adalah test"
         '''
     }
