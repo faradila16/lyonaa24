@@ -1,6 +1,6 @@
 node {
 
-    withEnv(['DOCKER_HOST=tcp://docker:2375']) {
+    withEnv(['DOCKER_HOST=tcp://172.21.0.2:2375']) {
 
         def PROD_HOST = "172.21.29.77"
         def PROD_USER = "ubuntu"
