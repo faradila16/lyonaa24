@@ -46,20 +46,19 @@ node {
     }
 
     stage('Build') {
-        withEnv(['DOCKER_HOST=unix:///var/run/docker.sock']) {
-            sh '''
-            whoami
-            id
-            docker ps
+    sh '''
+    whoami
+    id
+    ls -l /var/run/docker.sock
 
-            docker run --rm \
-              --user root \
-              -v $(pwd):/app \
-              -w /app \
-              composer:2.6 \
-              composer install --ignore-platform-req=ext-gd --no-dev --optimize-autoloader
-            '''
-        }
+    docker run --rm \
+      --user root \
+      -v $(pwd):/app \
+      -w /app \
+      composer:2.6 \
+      composer install --ignore-platform-req=ext-gd --no-dev --optimize-autoloader
+    '''
+}
     }
 
 }
