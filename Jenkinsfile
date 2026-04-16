@@ -45,7 +45,8 @@ node {
         checkout scm
     }
 
-    stage('Build') {
+  stage('Build') {
+    withEnv(['DOCKER_HOST=unix:///var/run/docker.sock']) {
         sh '''
         docker run --rm \
           -v $(pwd):/app \
@@ -54,6 +55,7 @@ node {
           composer install --ignore-platform-req=ext-gd --no-dev --optimize-autoloader
         '''
     }
+}
 
     stage('Testing') {
         sh '''
