@@ -59,6 +59,6 @@ node {
       composer install --ignore-platform-req=ext-gd --no-dev --optimize-autoloader
     '''
 }
-    }
+    
 
 }
