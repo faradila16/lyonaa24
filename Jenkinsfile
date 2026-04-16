@@ -24,7 +24,7 @@ node {
 
     stage('Deploy') {
         docker.image('agung3wi/alpine-rsync:1.1').inside('--entrypoint="" -u root') {
-            sshagent(credentials: ['ssh-prod']) {
+            sshagent(credentials: ['ssh-prod2']) {
                 sh """
                 rsync -rav --delete -e "ssh -o StrictHostKeyChecking=no" ./ \
                     ${PROD_USER}@${PROD_HOST}:${PROD_PATH}/ \
