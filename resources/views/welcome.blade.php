@@ -43,7 +43,7 @@
             <div class="space-y-4">
                 <p class="text-[10px] uppercase tracking-[0.5em] text-[#A69076] font-bold">Bondowoso • East Java</p>
                 <h1 class="font-syne text-5xl md:text-8xl font-bold tracking-tight leading-[0.9]">
-                    Simplify Beauty,<br>Create Moments.
+                   bunga mekar,<br>Create Moments.
                 </h1>
             </div>
             
