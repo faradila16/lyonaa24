@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Lyonaa24 | Bondowoso jawa timur Florist</title>
+    <title>Lyonaa24 | jurang sapi Bondowoso jawa timur Florist</title>
 
     <script src="https://cdn.tailwindcss.com"></script>
     
